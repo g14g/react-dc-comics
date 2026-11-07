@@ -1,10 +1,11 @@
-import React, { Fragment } from 'react';
-import './App.css';
+import React, { Fragment } from "react";
+import Prova from "./components/Prova";
+import "./App.css";
 
 function App() {
     return (
         <React.Fragment>
-            <div>Prova</div>
+            <Prova />
         </React.Fragment>
     );
 }
