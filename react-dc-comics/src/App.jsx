@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
-import Prova from "./components/Prova";
 import "./App.css";
+import Header from "./components/Header";
 
 function App() {
     return (
         <React.Fragment>
-            <Prova />
+            <Header />
         </React.Fragment>
     );
 }

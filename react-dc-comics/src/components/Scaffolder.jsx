@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import './Scaffolder.css';
+import React, { Fragment } from "react";
+import "./Scaffolder.css";
 
 function Scaffolder() {
     return (
