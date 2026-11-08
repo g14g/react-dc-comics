@@ -22,7 +22,7 @@ header {
 }
 
 .header-container .menu ul li {
-    color: #000000;
+    color: #333333;
     align-content: center;
     font-weight: 700;
     height: 8rem;
@@ -34,7 +34,7 @@ header {
     height: 100%;
     align-items: center;
     text-decoration: none;
-    color: #000000;
+    color: #333333;
     position: relative;
 }
 

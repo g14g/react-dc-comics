@@ -3,23 +3,23 @@ import "./Header.css";
 
 function Header() {
     const headerMenuObjects = [
-        { id: 1, nome: "CHARACTERS", link: "#", class: "inactive" },
-        { id: 1, nome: "COMICS", link: "#", class: "active" },
-        { id: 1, nome: "MOVIES", link: "#", class: "inactive" },
-        { id: 1, nome: "TV", link: "#", class: "inactive" },
-        { id: 1, nome: "GAMES", link: "#", class: "inactive" },
-        { id: 1, nome: "COLLECTIBLES", link: "#", class: "inactive" },
-        { id: 1, nome: "VIDEOS", link: "#", class: "inactive" },
-        { id: 1, nome: "FANS", link: "#", class: "inactive" },
-        { id: 1, nome: "NEWS", link: "#", class: "inactive" },
-        { id: 1, nome: "SHOP", link: "#", class: "inactive" },
+        { id: 1, name: "CHARACTERS", link: "#", class: "inactive" },
+        { id: 2, name: "COMICS", link: "#", class: "active" },
+        { id: 3, name: "MOVIES", link: "#", class: "inactive" },
+        { id: 4, name: "TV", link: "#", class: "inactive" },
+        { id: 5, name: "GAMES", link: "#", class: "inactive" },
+        { id: 6, name: "COLLECTIBLES", link: "#", class: "inactive" },
+        { id: 7, name: "VIDEOS", link: "#", class: "inactive" },
+        { id: 8, name: "FANS", link: "#", class: "inactive" },
+        { id: 9, name: "NEWS", link: "#", class: "inactive" },
+        { id: 10, name: "SHOP", link: "#", class: "inactive" },
     ];
 
     const headerMenu = headerMenuObjects.map((menu) => {
         return (
             <li key={menu.id}>
                 <a href={menu.link} className={menu.class}>
-                    {menu.nome}
+                    {menu.name}
                 </a>
             </li>
         );

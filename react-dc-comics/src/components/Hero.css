@@ -1,0 +1,4 @@
+.hero {
+    height: 30rem;
+    background: url("/jumbotron.jpg") center top / cover no-repeat;
+}
