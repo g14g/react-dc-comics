@@ -6,25 +6,39 @@ import ComicsObj from "./ComicsObj";
 
 function ComicsCards() {
     const comicsCard = ComicsObj.map((comics) => {
+        // if (comics.series == "Action Comics" || comics.series == "Catwoman") {
+        //     return (
+        //         <div key={comics.id} className="comics-card">
+        //             <div className="img-wrapper">
+        //                 <img className={"transform-scale"} src={comics.thumb} alt={comics.series} />
+        //             </div>
+        //             <p>{comics.series}</p>
+        //         </div>
+        //     );
+        // } else {
+        //     return (
+        //         <div key={comics.id} className="comics-card">
+        //             <div className="img-wrapper">
+        //                 <img src={comics.thumb} alt={comics.series} />
+        //             </div>
+        //             <p>{comics.series}</p>
+        //         </div>
+        //     );
+        // }
+        let classTransform = false;
         if (comics.series == "Action Comics" || comics.series == "Catwoman") {
-            return (
-                <div key={comics.id} className="comics-card">
-                    <div className="img-wrapper">
-                        <img className={"transform-scale"} src={comics.thumb} alt={comics.series} />
-                    </div>
-                    <p>{comics.series}</p>
-                </div>
-            );
-        } else {
-            return (
-                <div key={comics.id} className="comics-card">
-                    <div className="img-wrapper">
-                        <img src={comics.thumb} alt={comics.series} />
-                    </div>
-                    <p>{comics.series}</p>
-                </div>
-            );
+            // if (comics.series == "Action Comics") {
+            classTransform = true;
         }
+
+        return (
+            <a key={comics.id} href="" className="comics-card">
+                <div className="img-wrapper">
+                    <img className={classTransform ? "transform-scale" : ""} src={comics.thumb} alt={comics.series} />
+                </div>
+                <p>{comics.series}</p>
+            </a>
+        );
     });
 
     const buyLinksObj = [
@@ -70,7 +84,7 @@ function ComicsCards() {
                         <div className="comics-card">ACTION COMICS</div> */}
                     </div>
                     <div className="load-more">
-                        <p>LOAD MORE</p>
+                        <button>LOAD MORE</button>
                     </div>
                 </div>
                 <div className="buy-links-wrapper">

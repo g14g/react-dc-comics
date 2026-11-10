@@ -1,0 +1,38 @@
+footer {
+    /* height: 30rem; */
+    background: url("/footer-bg.jpg") center top / cover no-repeat;
+}
+
+footer .nav-container .nav {
+    break-inside: avoid;
+}
+
+footer .nav-container {
+    display: flex;
+    padding: 3rem 0;
+}
+
+footer nav {
+    column-count: 3;
+    column-gap: 3rem;
+}
+
+footer nav h3 {
+    margin-bottom: 1rem;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0 0 1rem 0;
+}
+
+footer nav ul li {
+    padding: 0.2rem 0;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #888888;
+    font-size: 0.875rem;
+}

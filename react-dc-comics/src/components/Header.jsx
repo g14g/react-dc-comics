@@ -35,9 +35,9 @@ function Header() {
                                 <img src="/dc-logo.png" alt="" />
                             </a>
                         </div>
-                        <div className="menu">
+                        <nav>
                             <ul>{headerMenu}</ul>
-                        </div>
+                        </nav>
                     </div>
                 </div>
             </header>
