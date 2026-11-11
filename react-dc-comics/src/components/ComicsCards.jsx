@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import "./ComicsCards.css";
-import ComicsObj from "./ComicsObj";
+import ComicsObj from "../data/ComicsObj";
 
 // console.log(ComicsObj);
 

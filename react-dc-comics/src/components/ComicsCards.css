@@ -75,8 +75,8 @@ main .load-more button {
     font-size: 1rem;
     font-weight: 700;
     color: #ffffff;
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     height: 3rem;
     background-color: #4480f4;
     padding: 0rem 4rem;

@@ -3,18 +3,19 @@ footer {
     background: url("/footer-bg.jpg") center top / cover no-repeat;
 }
 
-footer .nav-container .nav {
-    break-inside: avoid;
+footer .nav-footer-container {
+    display: flex;
+    justify-content: space-between;
 }
 
-footer .nav-container {
-    display: flex;
-    padding: 3rem 0;
+footer .nav-footer-container .nav {
+    break-inside: avoid;
 }
 
 footer nav {
     column-count: 3;
     column-gap: 3rem;
+    padding: 3rem 0;
 }
 
 footer nav h3 {
@@ -27,12 +28,60 @@ footer nav ul {
     padding: 0 0 1rem 0;
 }
 
-footer nav ul li {
-    padding: 0.2rem 0;
-}
-
 footer nav ul li a {
     text-decoration: none;
     color: #888888;
     font-size: 0.875rem;
+    transition: color 0.3s ease-in-out;
+    padding: 0.25rem 0;
+    display: inline-flex;
+}
+
+footer nav ul li a:hover {
+    color: #ffffff;
+}
+
+footer .dc-footer-logo {
+    width: 45%;
+    background: url("/dc-logo-bg.png") center center / cover no-repeat;
+}
+
+section.social {
+    background-color: #303030;
+    padding: 2rem 0;
+}
+
+section .social-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.social button {
+    font-family: "inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding: 1rem 1.5rem;
+    border: 2px solid #4480f4;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+section.social .social-link {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+section.social .social-link h3 {
+    font-weight: 700;
+    color: #4480f4;
+}
+
+section.social .social-link ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
 }
