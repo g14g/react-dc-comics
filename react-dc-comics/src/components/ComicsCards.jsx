@@ -1,6 +1,9 @@
 import React, { Fragment } from "react";
 import "./ComicsCards.css";
 import ComicsObj from "../data/ComicsObj";
+import ComicsCard from "./ComicsCard";
+import BuyLinksObj from "../data/BuyLinksObj";
+import BuyLink from "./BuyLink";
 
 // console.log(ComicsObj);
 
@@ -25,6 +28,7 @@ function ComicsCards() {
         //         </div>
         //     );
         // }
+
         let classTransform = false;
         if (comics.series == "Action Comics" || comics.series == "Catwoman") {
             // if (comics.series == "Action Comics") {
@@ -32,31 +36,33 @@ function ComicsCards() {
         }
 
         return (
-            <a key={comics.id} href="" className="comics-card">
-                <div className="img-wrapper">
-                    <img className={classTransform ? "transform-scale" : ""} src={comics.thumb} alt={comics.series} />
-                </div>
-                <p>{comics.series}</p>
-            </a>
+            // <a key={comics.id} href="" className="comics-card">
+            //     <div className="img-wrapper">
+            //         <img className={classTransform ? "transform-scale" : ""} src={comics.thumb} alt={comics.series} />
+            //     </div>
+            //     <p>{comics.series}</p>
+            // </a>
+            <ComicsCard key={comics.id} classTransform={classTransform} src={comics.thumb} alt={comics.series} />
         );
     });
 
-    const buyLinksObj = [
-        { id: 1, name: "Digital Comics", imglink: "/buy-comics-digital-comics.png", pagelink: "#" },
-        { id: 2, name: "Dc Merchandise", imglink: "/buy-comics-merchandise.png", pagelink: "#" },
-        { id: 3, name: "Subscription", imglink: "/buy-comics-subscriptions.png", pagelink: "#" },
-        { id: 4, name: "Comic Shop Locator", imglink: "/buy-comics-shop-locator.png", pagelink: "#" },
-        { id: 5, name: "DC Power Visa", imglink: "/buy-dc-power-visa.svg", pagelink: "#" },
-    ];
+    // const buyLinksObj = [
+    //     { id: 1, name: "Digital Comics", imglink: "/buy-comics-digital-comics.png", pagelink: "#" },
+    //     { id: 2, name: "Dc Merchandise", imglink: "/buy-comics-merchandise.png", pagelink: "#" },
+    //     { id: 3, name: "Subscription", imglink: "/buy-comics-subscriptions.png", pagelink: "#" },
+    //     { id: 4, name: "Comic Shop Locator", imglink: "/buy-comics-shop-locator.png", pagelink: "#" },
+    //     { id: 5, name: "DC Power Visa", imglink: "/buy-dc-power-visa.svg", pagelink: "#" },
+    // ];
 
-    const buyLinks = buyLinksObj.map((buylink) => {
+    const buyLinks = BuyLinksObj.map((buylink) => {
         return (
-            <a key={buylink.id} href={buylink.pagelink}>
-                <div className="buy-link">
-                    <img src={buylink.imglink} alt="" />
-                    <p>{buylink.name}</p>
-                </div>
-            </a>
+            // <a key={buylink.id} href={buylink.pagelink}>
+            //     <div className="buy-link">
+            //         <img src={buylink.imglink} alt="" />
+            //         <p>{buylink.name}</p>
+            //     </div>
+            // </a>
+            <BuyLink key={buylink.id} link={buylink.pagelink} img={buylink.imglink} name={buylink.name} />
         );
     });
 

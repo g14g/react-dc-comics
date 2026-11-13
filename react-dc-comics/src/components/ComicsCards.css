@@ -35,8 +35,8 @@ a.comics-card {
 }
 
 a.comics-card .img-wrapper {
-    height: 14rem;
     width: 100%;
+    aspect-ratio: 1 / 1;
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -53,7 +53,7 @@ a.comics-card .img-wrapper img {
 }
 
 a.comics-card .img-wrapper img.transform-scale {
-    transform: scale(1.5);
+    transform: scale(1.56);
 }
 
 a.comics-card p {
